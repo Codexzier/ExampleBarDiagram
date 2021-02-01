@@ -16,6 +16,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+
         <Diagram:BarDiagramControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DiagramLevelItemsSource="{Binding Items}"/>
 
         <Button Content="create new list with values" Grid.Row="1" Command="{Binding CommandCreateNewListWithValues}" />
