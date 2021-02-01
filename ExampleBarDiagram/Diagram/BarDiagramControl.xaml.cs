@@ -23,11 +23,11 @@ namespace ExampleBarDiagram.Diagram
         {
             if (d is BarDiagramControl control)
             {
-                SetValuesToBarDiagrams(control);
+                SetValuesToBarDiagram(control);
             }
         }
 
-        private static void SetValuesToBarDiagrams(BarDiagramControl control)
+        private static void SetValuesToBarDiagram(BarDiagramControl control)
         {
             if (control.DiagramLevelItemsSource == null)
             {
@@ -59,6 +59,6 @@ namespace ExampleBarDiagram.Diagram
 
         public BarDiagramControl() => this.InitializeComponent();
 
-        private void UserControl_SizeChanged(object sender, SizeChangedEventArgs e) => SetValuesToBarDiagrams(this);
+        private void UserControl_SizeChanged(object sender, SizeChangedEventArgs e) => SetValuesToBarDiagram(this);
     }
 }
